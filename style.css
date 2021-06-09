@@ -131,10 +131,10 @@ html{
 section{
     padding: 100px 0;
 }
-.about{
+.about, .skills{
     font-family: 'Poppins', sans-serif;
 }
-.about .title{
+.about .title , .skills .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -183,7 +183,7 @@ section{
 .about .about-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.about .about-content .right .text, .skills .skills-content .column .text{
     font: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -235,7 +235,7 @@ section{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 100px;
     height: 3px;
     background: #fff;
     transform: translateX(-50%);
@@ -293,6 +293,120 @@ section{
 
 .navbar .menuside{
     display: none;
+}
+
+
+/* SKILLS SECTION */
+.skills .title, .contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .title::before, .contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .column{
+    width: calc(55% - 30px);
+}
+
+.skills .skills-content .right{
+    width: 40%;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .js::before{
+    width: 60%;
+}
+.skills .skills-content .right .python::before{
+    width: 80%;
+}
+.skills .skills-content .right .sql::before{
+    width: 50%;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: crimson;
+    right: 20px;
+    bottom: 10px;
+    text-align: center;
+    line-height:45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+.scroll-up-btn:hover{
+    background: none;
+    color: crimson;
+    border: 1px solid crimson;
 }
 
 
@@ -380,7 +494,17 @@ section{
     .services .services-content p{
         font-size: 14px;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 25px;
+        transition: all .5s ease;
+    }
 
+    .scroll-up-btn{
+        height: 30px;
+        width: 30px;
+        line-height:30px;
+    }
 
 }
 
