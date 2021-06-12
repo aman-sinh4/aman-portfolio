@@ -37,7 +37,7 @@ html{
     z-index: 999;
 }
 .navbar.sticky{
-    background: linear-gradient(to bottom,crimson 80%, rgb(73, 73, 73) );
+    background: crimson;
     padding: 5px 0;
     transition: all .4s ease;
 }
@@ -107,25 +107,6 @@ html{
     color: crimson;
     font-weight: 600;
 }
-.home .home-content a{
-    display: inline-block;
-    color: white;
-    background: crimson;
-    font-size: 25px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius:  6px;
-    border: 2px solid crimson;
-    transition: all .3s ease;
-    letter-spacing:1.5px ;
-}
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
-}
-
-
-
 
 /* ABOUT SECTION */
 section{
@@ -410,6 +391,11 @@ section{
 }
 
 
+
+
+
+
+
 @media (max-width:800px){
     .max-width{
         padding: 0 50px;
@@ -432,7 +418,6 @@ section{
         top: 0;
         background: rgba(32, 31, 31, 0.8);
         backdrop-filter: blur(8px);
-        filter: drop-shadow(0px 0px 20px rgb(255, 255, 255, 0.3));
         text-align: center;
         padding-top: 80px;
         transition: all .3s ease-in-out;  
