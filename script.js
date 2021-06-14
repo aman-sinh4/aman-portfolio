@@ -19,12 +19,10 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-
     //scroll up btn function
 
   $('.scroll-up-btn').click(function(){
       $('html').animate({scrollTop:0});
   });
-
 
 })

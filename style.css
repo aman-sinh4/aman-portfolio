@@ -84,7 +84,6 @@ html{
     display: flex;
     background: url("https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     color: #fff;
     min-height: 500px; 
@@ -155,7 +154,6 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
 }
 .about .about-content .left{
     width: 45%;
@@ -390,12 +388,6 @@ section{
     border: 1px solid crimson;
 }
 
-
-
-
-
-
-
 @media (max-width:800px){
     .max-width{
         padding: 0 50px;
@@ -410,6 +402,7 @@ section{
     .navbar.sticky .menu-btn:hover{
         color: rgb(0, 0, 0); 
     }
+
     .navbar .menu{
         position: fixed;
         height: 100vh;
