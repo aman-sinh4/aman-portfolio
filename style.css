@@ -8,6 +8,7 @@
 html{
     scroll-behavior:smooth;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -92,7 +93,7 @@ html{
     margin: auto 0 auto 5px;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 20px;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -232,7 +233,6 @@ section{
     width: calc(33% - 20px);
     background: #222;
     padding: 20px 25px;
-    cursor: pointer;
     text-align: center;
     transition: all .3s ease;
     border-radius: 10px;
@@ -260,6 +260,36 @@ section{
 .services .services-content .card .box:hover{
     transform: scale(1.05);
 }
+.services .services-content .checkout{
+    margin-top: 12px;
+}
+.btn{
+    display: inline-block;
+    padding:5px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid crimson;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+    background: #2b2b2b;
+}
+.btn:hover{
+    color: crimson;
+    font-weight: 500;
+}
+.services a{
+    font-style: none;
+    color: white;
+}
+.services-content span{
+    color: crimson;
+    font-weight: 500;
+}
+.services-content span:hover{
+    color: rgba(220, 20, 60, 0.623);
+}
+
 .arrow{
     display:inline-block;
     cursor: pointer; 
@@ -303,7 +333,9 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-
+.skills .skills-content i{
+    margin-right: 7px;
+}
 .skills .skills-content .left p{
     text-align: justify;
 }
@@ -351,13 +383,16 @@ section{
     width: 70%;
 }
 .skills .skills-content .right .js::before{
-    width: 60%;
+    width: 70%;
 }
 .skills .skills-content .right .python::before{
     width: 80%;
 }
 .skills .skills-content .right .sql::before{
     width: 50%;
+}
+.skills .skills-content .right .react::before{
+    width: 60%;
 }
 
 .scroll-up-btn{
@@ -402,17 +437,14 @@ section{
 }
 
 .contact .contact-content .column{
-    width: 50%;
+   margin-left: 10rem;
 }
-.contact .contact-content .column{
-    width: calc(55%-30px);
-}
-.contact .contact-content .text{
+.contact .contact-content .text p{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
+.contact .contact-content .left {
     text-align: justify;
 }
 .contact .contact-content .left .icons{
@@ -437,7 +469,8 @@ section{
     color: rgba(255, 255, 255, 0.781) ;
 }
 .contact .contact-content .right{
-    width: 40%;
+    width: 45%;
+    margin-right: 5rem;
 }
 .contact .right form .fields{
     display: flex;
