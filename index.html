@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
@@ -15,15 +16,12 @@
 
 </head>
 <body class="body">
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo">
+            <div class="logo" data-aos="fade-down-right" data-aos-duration="700">
                 <a href="#">Portfo<span>lio</span></a>
             </div>
-            <ul class="menu">
+            <ul class="menu" data-aos="fade-down-left" data-aos-duration="1500">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Projects</a></li>
@@ -35,6 +33,9 @@
             <div class="menu-btn">
                <i class="fas fa-bars"></i>
             </div>
+            <div class="scroll-up-btn">
+                <i class="fas fa-angle-up"></i>
+            </div>
         </div>
     </nav>
 
@@ -42,7 +43,7 @@
 
     <section class="home" id="home">
         <div class="max-width">
-            <div class="home-content">
+            <div class="home-content" data-aos="fade-right" data-aos-duration="1500">
                 <div class="text-1">Hi, my name is</div>
                 <div class="text-2"> Aman Raj</div>
                 <div class="text-3">And I build things for the <span>Web</span>
@@ -53,12 +54,12 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
+            <h2 class="title" data-aos="fade-down" data-aos-duration="1500" data-offset=500>About Me</h2>
             <div class="about-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right" data-aos-duration="1500" data-offset=500>
                     <img src="aboutpic.png" alt="about">
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="fade-left" data-aos-duration="1500" data-offset=500>
                     <p>Hello! My name is Aman and I enjoy creating things that live on the internet. I am a Front End Developer having a good understanding of design and layouts. I try to keep myself updated with the latest trends in the web world. I code meaningful markups and web applications.</p>
                     <a href="AmanRaj_CV.pdf" download="Aman Raj">Download CV <div class="arrow"><i class="fas fa-arrow-right"></i></div></a>
                 </div>
@@ -69,10 +70,10 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">Projects</h2>
+            <h2 class="title" data-aos="fade-down" data-aos-duration="1500" data-offset=500 >Projects</h2>
             <div class="services-content">
-                <div class="card">
-                    <div class="box">
+                <div class="card" data-aos="fade-left" data-aos-duration="1000" data-offset=500 data-aos-delay="200" >
+                    <div class="box"  >
                         <i class="fab fa-discord"></i>
                         <div class="text">Discord Chat Bot</div>
                         <p>A discord chat bot which send quotes when poked with some custom commands.You can also add or delete new custom messages.</p> <a href="https://github.com/am4n-raj/discordbot">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-offset=500 data-aos-delay="200">
                     <div class="box">
                         <i class="fas fa-sign-language"></i>
                         <div class="text">Translator</div>
@@ -91,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-duration="1000" data-offset=500 data-aos-delay="200">
                     <div class="box">
                         <i class="far fa-sticky-note"></i>
                         <div class="text">Quick Notes</div>
@@ -110,7 +111,7 @@
         <div class="max-width">
             <h2 class="title">My Skills</h2>
             <div class="skills-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right" data-aos-duration="1000" data-offset=0>
                     <div class="text">My Skills</div>
                     <p>
                         <i class="fab fa-html5 fa-7x" ></i>
@@ -124,7 +125,7 @@
                     </p>
                 </div>
                 <div class="column right">
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=0 data-aos-delay="75">
                         <div class="info">
                             <span>HTML</span>
                             
@@ -132,28 +133,28 @@
                         <div class="line html"></div>
                     </div>
 
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=10 data-aos-delay="100">
                         <div class="info">
                             <span>CSS</span>
                         </div>
                         <div class="line css"></div>
                     </div>
 
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=20 data-aos-delay="200">
                         <div class="info">
                             <span>JS</span>
                         </div>
                         <div class="line js"></div>
                     </div>
 
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=30 data-aos-delay="400">
                         <div class="info">
                             <span>React</span>
                         </div>
                         <div class="line react"></div>
                     </div>
 
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=40 data-aos-delay="600">
                         <div class="info">
                             <span>Python</span>
                             
@@ -161,7 +162,7 @@
                         <div class="line python"></div>
                     </div>
 
-                    <div class="bars">
+                    <div class="bars" data-aos="fade-left" data-aos-duration="1000" data-offset=0 data-aos-delay="800">
                         <div class="info">
                             <span>SQL</span>
                                                      
@@ -176,7 +177,7 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact Me</h2>
+            <h2 class="title" data-aos="fade-down" data-aos-duration="1000" data-offset="100" >Contact Me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
@@ -184,8 +185,8 @@
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Aman Raj</div>
+                                <div class="head" >Name</div>
+                                <div class="sub-title" data-aos="fade-right" data-aos-duration="1000" data-offset="100" data-aos-delay="100">Aman Raj</div>
                             </div>
                         </div>
 
@@ -193,7 +194,7 @@
                             <i class="fas fa-thumbtack"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Jaipur, Rajasthan</div>
+                                <div class="sub-title" data-aos="fade-right" data-aos-duration="1000" data-offset="100" data-aos-delay="150">Jaipur, Rajasthan</div>
                             </div>
                         </div>
 
@@ -201,7 +202,7 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">am4nraj@gmail.com</div>
+                                <div class="sub-title" data-aos="fade-right" data-aos-duration="1000" data-offset="100" data-aos-delay="200">am4nraj@gmail.com</div>
                             </div>
                         </div>
 
@@ -212,19 +213,19 @@
                     <div class="text">Message Me</div>
                     <form action="https://formspree.io/f/xbjqapjg" method="POST">
                         <div class="fields">
-                            <div class="field name">
+                            <div class="field name" data-aos="fade-right" data-aos-duration="1000" data-offset="100" data-aos-delay="200">
                                 <input type="text" placeholder="Name" name="Name" required/>
                             </div>
-                            <div class="field email">
+                            <div class="field email" data-aos="fade-left" data-aos-duration="1000" data-offset="200" data-aos-delay="200">
                                 <input type="text" placeholder="Email" name="email" required/>
                             </div>
                         </div>
 
-                        <div class="field textarea">
+                        <div class="field textarea" data-aos="fade-top" data-aos-duration="1000" data-offset="100" data-aos-delay="300">
                                 <textarea cols="30" rows="10" placeholder="Write Your Message Here" name="message" required></textarea>
                         </div>
                         
-                        <div class="button">
+                        <div class="button" data-aos="fade-top" data-aos-duration="1000" data-offset="100" data-aos-delay="200">
                                 <button type="submit">Send Message</button>
                         </div>
 
@@ -239,9 +240,9 @@
 
     <!-- Footer -->
         <div class="max-width">
-            <footer class="footer">
+            <footer class="footer" data-aos="fade-down" data-aos-duration="1500">
                 <div class="title">Social Media Links</div>
-                <ul class="social-links list-nonbullet">
+                <ul class="social-links list-nonbullet" >
         
         
                     <li class="list-inline list-nonbullet"><a class="link " href="https://www.linkedin.com/in/am4nraj/"><img class="footer-img lin" src="\lin.svg"></a></li>
@@ -261,6 +262,11 @@
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
 
 
     

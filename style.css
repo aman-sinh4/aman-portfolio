@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; 
+    overflow: none;
 }
 html{
     scroll-behavior:smooth;
@@ -26,7 +27,7 @@ html{
 }
 .max-width{
     max-width: 1500px;
-    padding: 0 50px;
+    padding: 0 40px;
     margin: auto;
 }
 .navbar{
@@ -58,6 +59,8 @@ html{
 .navbar.sticky .logo a span{
     color: rgb(0, 0, 0);
 }
+
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -84,7 +87,7 @@ html{
 .home{
     display: flex;
     background: url("https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80") no-repeat center;
-    background-size: cover;
+    background-size:cover;
     height: 100vh;
     color: #fff;
     min-height: 500px; 
@@ -98,10 +101,12 @@ html{
 .home .home-content .text-2{
     font-size: 75px;
     margin-left: -3px;
+
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -437,7 +442,7 @@ section{
 }
 
 .contact .contact-content .column{
-   margin-left: 10rem;
+   width: calc(55%-20px);
 }
 .contact .contact-content .text p{
     font-size: 20px;
@@ -529,6 +534,7 @@ section{
 
 /* Footer */
 footer{
+    width: 100%;
     padding: 20px 23px;
     text-align: center;
 }
@@ -592,7 +598,7 @@ footer .social-links{
         display: block;
         position: fixed;
         height: 100vh;
-        width: 150%;
+        width: 145%;
         right: 100%;
         top: 0;
         padding-top: 80px;
