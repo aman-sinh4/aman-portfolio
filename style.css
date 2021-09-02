@@ -201,7 +201,7 @@ section{
 }
 
 /* Services */
-.services, .contact{
+.services, .contact, .blogs{
     font-family: 'Poppins', sans-serif;
     background: #111;
     color: white;
@@ -565,6 +565,7 @@ footer .social-links{
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 
 @media (max-width:800px){
