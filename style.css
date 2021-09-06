@@ -200,7 +200,7 @@ section{
     width: 50%;
 }
 
-/* Services */
+/* Projects */
 .services, .contact, .blogs{
     font-family: 'Poppins', sans-serif;
     background: #111;
@@ -235,12 +235,19 @@ section{
     text-align: justify;
 }
 .services .services-content .card{
-    width: calc(33% - 20px);
+    display: flex;
+    
+}
+.services .services-content .card .box{
+    border: 1px solid lightgray;
     background: #222;
     padding: 20px 25px;
     text-align: center;
     transition: all .3s ease;
     border-radius: 10px;
+    margin: 12px;
+    width: 400px;
+    
 }
 
 .services .services-content .card i{
@@ -248,10 +255,10 @@ section{
     color: crimson;
     transition: color .3s ease;
 }
-.services .services-content .card:hover{
+.services .services-content .card .box:hover{
     background: crimson;
 }
-.services .services-content .card:hover i{
+.services .services-content .card .box:hover i{
     color: #fff;
 }
 .services .services-content .card .text{
@@ -259,12 +266,6 @@ section{
     padding-bottom: 10px;
 }
 
-.services .services-content .card .box{
-    transition: all .3s ease;
-}
-.services .services-content .card .box:hover{
-    transform: scale(1.05);
-}
 .services .services-content .checkout{
     margin-top: 12px;
 }
@@ -566,6 +567,52 @@ footer .social-links{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.blog-container
+{
+    display: flex;
+    align-items: center;
+    
+}
+.blog-content{
+    transition: .2s ease-in-out;
+    align-items: center;
+    border: 1px solid rgba(211, 211, 211, 0.322);
+    padding: 1.3rem;
+    border-radius: 6px;
+    background: #2b2b2b;
+    text-align: center;
+    width: 400px;
+    margin: 12px;
+}
+.blog-content:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 2px 5px -2px rgba(211, 211, 211, 0.404);
+    
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: crimson;
+}
+.blog-content >p{
+    margin-bottom: 15px;
+    
+    
+}
+.blog-content > button{
+    border-radius: 6px;
+    border: 1px solid crimson;
+    cursor:pointer;
+    width: fit-content;
+    
+    
+}
+
+
 
 
 @media (max-width:800px){
@@ -684,8 +731,11 @@ footer .social-links{
         transition: all .3s ease;
     }
     .services .services-content .card{
-        width: 100%;
+        margin-left: 0px;
+    }
+    .services .services-content .card .box{
         margin-bottom: 20px;
+        width: 210px;
     }
     .services .services-content .card .text{
         font-size: 35px;
