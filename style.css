@@ -620,6 +620,9 @@ footer .social-links{
     justify-content: center;
     margin: auto;
 }
+.blog1 a{
+    color: #1DA1F2;
+}
 .blog1-content img{
     width: 300px;
     height: 300px;
@@ -637,7 +640,6 @@ footer .social-links{
     justify-content: center;
     margin: auto;
     letter-spacing: 1px ;
-    
 }
 
 
