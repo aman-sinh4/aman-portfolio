@@ -201,7 +201,7 @@ section{
 }
 
 /* Projects */
-.services, .contact, .blogs{
+.services, .contact, .blogs, .blog1{
     font-family: 'Poppins', sans-serif;
     background: #111;
     color: white;
@@ -549,6 +549,7 @@ footer .social-links{
     display: inline;
     padding: 1rem 0.5rem;
 }
+
 .footer .footer-img{
     width: 30px;
     height: 30px;
@@ -566,7 +567,6 @@ footer .social-links{
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
-
 .blog-container
 {
     display: flex;
@@ -584,10 +584,12 @@ footer .social-links{
     width: 400px;
     margin: 12px;
 }
-.blog-content:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 2px 5px -2px rgba(211, 211, 211, 0.404);
-    
+
+.blog-content a{
+    color: crimson;
+}
+.blog-content a:hover{
+    color: rgba(220, 20, 60, 0.555);
 }
 
 .blog-title{
@@ -611,8 +613,32 @@ footer .social-links{
     
     
 }
-
-
+.blog1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.blog1-content img{
+    width: 300px;
+    height: 300px;
+    margin: 12px;
+    display: inline-block;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    
+}
+.blog1-content{
+    width: 700px;
+    text-align: justify;
+    justify-content: center;
+    margin: auto;
+    letter-spacing: 1px ;
+    
+}
 
 
 @media (max-width:800px){
