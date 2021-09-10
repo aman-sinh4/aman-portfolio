@@ -201,7 +201,7 @@ section{
 }
 
 /* Projects */
-.services, .contact, .blogs, .blog1{
+.services, .contact{
     font-family: 'Poppins', sans-serif;
     background: #111;
     color: white;
@@ -570,8 +570,7 @@ footer .social-links{
 .blog-container
 {
     display: flex;
-    align-items: center;
-    
+    justify-content: center;
 }
 .blog-content{
     transition: .2s ease-in-out;
@@ -619,6 +618,7 @@ footer .social-links{
     text-align: center;
     justify-content: center;
     margin: auto;
+    padding: 100px 0;
 }
 .blog1 a{
     color: #1DA1F2;
@@ -641,7 +641,30 @@ footer .social-links{
     margin: auto;
     letter-spacing: 1px ;
 }
-
+.blogs{
+    padding: 100px 0;
+    color: white;
+}
+.blog-body{
+    background: url('https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.836);
+    background-blend-mode: overlay;
+    font-family: 'Poppins', sans-serif;
+}
+.blog-body footer{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+}
+.blog1-body{
+    background: url('https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+    background-color: rgba(0, 0, 0, 0.836);
+    background-blend-mode: overlay;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
 
 @media (max-width:800px){
     .max-width{
