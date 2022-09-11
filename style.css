@@ -8,6 +8,7 @@
 }
 html{
     scroll-behavior:smooth;
+    transition: 0.3s ease-in-out;
 }
 
 /* width */
@@ -233,11 +234,13 @@ section{
     justify-content: space-between;  
     padding-bottom: 30px;
     text-align: justify;
+    transition: 0.3s ease-in-out;
 }
 .services .services-content .card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: 0.3s ease-in-out;
     
 }
 .services .services-content .card .box{
@@ -397,10 +400,10 @@ section{
     width: 80%;
 }
 .skills .skills-content .right .sql::before{
-    width: 50%;
+    width: 70%;
 }
 .skills .skills-content .right .react::before{
-    width: 60%;
+    width: 75%;
 }
 
 .scroll-up-btn{
@@ -767,6 +770,9 @@ footer .social-links{
 }
 
 @media (max-width:1000px){
+    .about .about-content .column{
+        width: 100%;
+    }
     .mt-ten{
         margin-top: 0;
     }
@@ -793,10 +799,16 @@ footer .social-links{
         width: 210px;
     }
     .services .services-content .card .text{
-        font-size: 35px;
+        font-size: 26px;
         padding-bottom: 10px;
     }
     .services .services-content p{
         font-size: 14px;
+    }
+}
+@media(max-width: 768px){
+    .services .services-content .card .text{
+        font-size: 22px;
+        padding-bottom: 10px;
     }
 }
