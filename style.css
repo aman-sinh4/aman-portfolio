@@ -236,6 +236,8 @@ section{
 }
 .services .services-content .card{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 .services .services-content .card .box{
@@ -661,6 +663,9 @@ footer .social-links{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+.mt-ten{
+    margin-top: -10rem;
+}
 
 @media (max-width:800px){
     .max-width{
@@ -762,6 +767,9 @@ footer .social-links{
 }
 
 @media (max-width:1000px){
+    .mt-ten{
+        margin-top: 0;
+    }
     .about .about-content .left img{
         height: 300px;
         width: 300px;
